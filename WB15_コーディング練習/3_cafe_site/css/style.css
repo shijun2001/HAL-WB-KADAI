@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+/* café5963 CSS設定 */
+
+
+/* ボディー */
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	background-color: #BA2636;
+	font-size: 14px;
+	color: #666;
+	margin: 0;
+}
+
+/* 画像のボーダー設定 */
+
+
+
+/* ヘッダー部分のマージン設定 */
+h1 {
+	margin: 0;
+}
+
+/* リンクカラー設定 */
+a:link {
+	color: #BA2636;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #BA2636;
+}
+
+a:hover {
+	color: #B4ACAD;
+}
+
+/* 外枠 */
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	background-color: #FFFEEF;
+}
+
+/* ヘッダー */
+#header {
+	height: 320px;
+	margin: 0;
+	background-color: #BA2636;
+}
+
+#header h1 {
+	height: 20px;
+	font-size: 12px;
+	color: #FFFEEF;
+}
+
+/* ナビゲーション */
+#menu {
+	width: 265px;
+	float: left;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	font-size: 14px;
+	font-weight: bold;
+	border-style: dotted;
+	border-width: 0px 0px 1px 0px;
+	border-color: #BA2636;
+	padding: 10px 10px 10px 6px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+#menu li a {
+	display: block;
+}
+
+#menu p {
+	padding: 10px;
+}
+
+/* コンテンツ */
+#content {
+	width: 635px;
+	float: right;
+	background-color: #FFFEEF;
+	/*float: left;*/
+}
+
+#content h2 {
+	color: #BA2636;
+	font-size: 18px;
+	margin-top: 25px;
+	margin-right: 15px;
+}
+
+#content p {
+	padding: 0 15px;
+	line-height: 1.6;
+}
+
+#content img {
+	border-radius: 12px;
+}
+
+.tablestyle {
+	margin-left: 15px;
+}
+
+.box {
+	float: left;
+	margin-bottom: 20px;
+	width: 635px;
+}
+
+.flt-left {
+	float: left;
+}
+
+/* フッター */
+#footer {
+	clear: both;
+	height: 100px;
+	background-color: #F6EFD7;
+	color: #BA2636;
+	text-align: center;
+	padding-top: 50px;
+}
+
+/* お問い合わせフォーム */
+form {
+	margin: 20px;
+	padding: 10px 20px;
+	width: 560px;
+
+}
+
+form ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+form li {
+	padding: 6px;
+	margin-bottom: 1px;
+}
+
+form li#send {
+	background: none;
+	margin-top: 6px;
+}
+
+form label {
+	float: left;
+	width: 70px;
+	text-align: right;
+	margin-right: 10px;
+	color: #BA2636;
+}
+
+form input,form textarea {
+	padding: 20px;
+	border: solid 1px #BA2636;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+form input:focus,form textarea:focus {
+	border: solid 1px #BA2636;
+	background: #FDC2C9;
+}
+
+form li#send button {
+	background: #BA2636;
+	border: none;
+	border-radius: 4px;
+	padding: 4px 8px;
+	color: #FFF;
+	margin-left: 80px;
+	cursor: pointer;
+}
+
+form li#send button:hover {
+	background-color: #C06C75;
+}

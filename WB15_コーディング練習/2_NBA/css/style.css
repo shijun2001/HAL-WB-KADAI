@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+@import url("normalize.css"); /* ------- Reset all CSS Styles */
+
+body {
+	font: 12px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	color: #4b4942;
+	background: #FFFFFC;
+}
+a {
+	text-decoration: none;
+	color: #507ea4;
+}
+a:hover {
+	color: #bb800f;
+}
+hr {
+	height: 1px;
+	border: none;
+	border-top: 1px #708090 dashed;
+}
+ul,li {
+	list-style: none;
+}
+
+/* container */
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFFC;	
+}
+
+/* ロゴ・サイトタイトル */
+h1 {
+	font-size: 2em;
+	line-height: 1em;
+}
+h1 a, h1 a:hover {
+	/*display: block;*/
+	height: 40px;
+	padding-top: 10px;
+	padding-left: 20px;
+	color: #165E83;
+}
+h1 span {
+	font-size: 1.5em;
+}
+
+/* メインナビゲーション */
+#navigation_wrapper {
+	background: #165E83;
+	height: 40px;
+	width: 920px;
+	margin: 5px auto 20px auto;
+	border-radius:6px;
+}
+#navigation li {
+	float: left;
+}
+#navigation li a {
+	padding: 10px 10px 0 10px;
+	height: 30px;
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #F3F3F3;
+	list-style:none;
+}
+#navigation li a:hover {
+	color: #165E83;
+	background: #FFFFFC;
+}
+
+/* メインビジュアル */
+#main_img {
+	width: 920px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+#main_img2 {
+	width: 920px;
+	height: 270px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.main_image {
+	position: absolute;
+}
+.main_image img {
+	border-radius: 6px;
+}
+
+/* メインコンテンツ */
+#text_wrapper {
+	width: 800px;
+	overflow: hidden;
+	padding: 20px;
+	margin: 0 auto;
+}
+#text_wrapper h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #708090;
+}
+#text_wrapper h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #708090;
+}
+#text_wrapper p {
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height:2;
+	color: #708090;
+}
+#text_wrapper dt {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #708090;
+}
+#text_wrapper dl {
+	color: #708090;
+}
+#text_wrapper img.right {
+	height: 400px;
+	width: 400px;
+	float: right;
+	margin: 80px 0px 0px 40px;
+	border-radius: 6px;
+}
+#text_wrapper img.right2 {
+	height: 300px;
+	width: 400px;
+	float: right;
+	margin: 80px 0px 0px 40px;
+	border-radius: 6px;
+}
+#text_wrapper iframe {
+	float: right;
+	margin: 40px 0px 0px 40px;
+}
+#text_area{
+	overflow: auto;
+}
+#text_area h2,h3 {
+	margin: 1em 0 1em 0;
+}
+#text_area .west {
+	background: #A22041;
+	color: #F3F3F3;
+	border: double 1px #165E83;
+}
+#text_area .east {
+	background: #1e50a2;
+	color: #F3F3F3;
+	border: double 1px #165E83;
+}
+#text_area td {
+	border: double 1px #165E83;
+	text-align: center;
+	width: 300px;
+	height: 30px;
+}
+#text_area td.icon {
+	border: double 1px #165E83;
+	text-align: center;
+	width: 70px;
+}
+#text_area td img {
+	width: 30px;
+}
+
+/* バナーエリア */
+#banner_wrapper {
+	width: 880px;
+	overflow: hidden;
+	padding: 10px 0 0 26px;
+	margin: 0 auto;
+}
+.banner {
+	float: left;
+	width: 244px;
+	float: left;
+	background: #165e83;
+	margin-right: 59px;
+	padding-bottom: 10px;
+	border-radius:6px;
+}
+.banner #img01 {
+	margin: 0 auto;
+	width: 228px;
+	height: 202px;
+	border: 2px solid #FFFFFC;
+	border-radius:6px;
+	background-image:url(../images/img01.jpg);
+}
+.banner #img01:hover {
+	margin: 0 auto;
+	width: 228px;
+	height: 202px;
+	border: 2px solid #FFFFFC;
+	border-radius:6px;
+	background-image:url(../images/img11.jpg);
+}
+.banner #img02 {
+	margin: 0 auto;
+	width: 228px;
+	height: 202px;
+	border: 2px solid #FFFFFC;
+	border-radius:6px;
+	background-image:url(../images/img02.jpg);
+}
+.banner #img02:hover {
+	margin: 0 auto;
+	width: 228px;
+	height: 202px;
+	border: 2px solid #FFFFFC;
+	border-radius:6px;
+	background-image:url(../images/img12.jpg);
+}
+.banner #img03 {
+	margin: 0 auto;
+	width: 228px;
+	height: 202px;
+	border: 2px solid #FFFFFC;
+	border-radius:6px;
+	background-image:url(../images/img03.jpg);
+}
+.banner #img03:hover {
+	margin: 0 auto;
+	width: 228px;
+	height: 202px;
+	border: 2px solid #FFFFFC;
+	border-radius:6px;
+	background-image:url(../images/img13.jpg);
+}
+.banner_last {
+	margin-right: 0;
+}
+.banner h2 {
+	font-size: 1.4em;
+	font-weight:bold;
+	padding: 10px 10px 10px 15px;
+}
+.banner h2 a {
+	color: #F3F3F3;
+}
+.banner h2 a:hover {
+	color: #c9caca;
+}
+
+/* フッター */
+#footer_wrapper {
+	width: 900px;
+	padding-left: 10px;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+#footer {
+	position: relative;
+	width: 900px;
+	height: 67px;
+	background: #FFFFFC;
+}
+#footer .logo {
+	padding: 34px 0 0 0px;
+	width: 300px;
+	float: left;
+	color: #507ea4;
+}
+#footer ul {
+	padding-top: 34px;
+	padding-right: 5px;
+	float: right;
+}
+#footer ul li {
+	float: left;
+	padding-left: 10px;
+	list-style:none;
+}
+#footer a {
+	color: #708090;
+}
+#footer li a:hover {
+	color: #c9caca;
+}

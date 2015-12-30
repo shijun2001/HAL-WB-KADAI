@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<title>007-SPECTRE</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/ionicons.css">		
+        <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <link rel="stylesheet" href="css/lightslider.css">
+
+        <link rel="icon" type="image/png" href="images/title.png">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/perfect-scrollbar.jquery.js"></script>
+        <script type="text/javascript" src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="js/lightslider.js"></script>
+        <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+        
+
+
+        <script>
+            jQuery(document).ready(function($){
+                $('.scrollcontainer').perfectScrollbar()
+            });
+        </script>
+
+        <script>
+            $(function(){
+                $('#fullscreen').fullpage({
+                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6','page7'],
+                    menu: '#menu'
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $(".content-slider").lightSlider({
+                    loop:true,
+                    keyPress:true
+                });                
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 4,
+                movingToCenter: function ($item) {
+                    $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+                },
+                movedToCenter: function ($item) {
+                    $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+                },
+                movingFromCenter: function ($item) {
+                    $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+                },
+                movedFromCenter: function ($item) {
+                    $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+                },
+                clickedCenter: function ($item) {
+                    $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+                }
+            });
+
+            $('#prev').bind('click', function () {
+                carousel.prev();
+                return false
+            });
+
+            $('#next').bind('click', function () {
+                carousel.next();
+                return false;
+            });
+
+            $('#reload').bind('click', function () {
+                newOptions = eval("(" + $('#newoptions').val() + ")");
+                carousel.reload(newOptions);
+                return false;
+            });
+
+          });
+        </script>
+
+	</head>
+
+    <body>
+
+
+        <div id="allpage">
+            <ul id="menu">
+                <li><img src="images/logo.png" alt="007's logo" class="logo" /></li>
+                <li data-menuanchor="page1" class="active nav"><a href="#page1">Home</a></li>
+                <li data-menuanchor="page2" class="nav"><a href="#page2">Introduction</a></li>
+                <li data-menuanchor="page3" class="nav"><a href="#page3">Story</a></li>
+                <li data-menuanchor="page4" class="nav"><a href="#page4">Cast</a></li>
+                <li data-menuanchor="page5" class="nav"><a href="#page5">Exhibition</a></li>
+                <li data-menuanchor="page6" class="nav"><a href="#page6">Gallery</a></li>
+                <li data-menuanchor="page7" class="nav"><a href="#page7">Audio</a></li>
+            </ul> <!-- navigation end -->
+        
+		
+            <div id="fullscreen">
+                <div class="section section-main" id="main">
+                    <div class="main-text row">
+                        <h5>DANIEL CRAIG</h5>
+                        <h5>MONICA BELLUCCI</h5>
+                        <h5>CHRISTOPH WALTZ</h5>
+                        <h1>SPECTRE</h1> 
+                        <h4>COMING SOON</h4>
+                    </div> 
+                </div> <!-- section-main end -->
+
+                
+        		<div class="section section-intro" id="intro">
+        			<div class="row">
+                        <h2>INTRODUCTION</h2>
+                        <div class="infos">
+                            <p>
+                                <span>A</span> cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind <a href="http://www.007.com/new-spectre-trailer-released/">SPECTRE</a>.
+                            </p>
+                        </div>
+                    </div> 
+        		</div> <!-- section-intro end -->
+
+
+                <div class="section section-story" id="story">
+                    <div class="row">
+                        <h2>STORY</h2>
+                        <div  class="scrollcontainer story-div">
+                            <div class="youtube">
+                                <iframe frameborder="0" scrolling="no" tabindex="0" width="100%" height="100%" src="https://www.youtube.com/embed/LOWc8GefAV8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="story-span">
+                                <span>S</span>pectre (Special Executive for Counter-intelligence, Terrorism, Revenge and Extortion) will be the twenty-fourth James Bond film produced by Eon Productions. It will feature Daniel Craig in his fourth performance as James Bond,and Christoph Waltz as Franz Oberhauser, the film's antagonist.It was directed by Sam Mendes as his second James Bond film following Skyfall, and was written by John Logan, Neal Purvis, Robert Wade and Jez Butterworth. The story features James Bond's first encounter with the global criminal agency known as SPECTRE, marking the organisation's first appearance in an Eon Productions film since 1971's Diamonds Are Forever.
+                                <br/><br/>
+                                <span>T</span>he SPECTRE is a fictional global criminal syndicate and terrorist organization featured in the James Bond novels by Ian Fleming, the films based on those novels, and James Bond video games. Led by evil genius and supervillain Ernst Stavro Blofeld, the international organization first formally appeared in the novel Thunderball (1961) and in the film Dr. No (1962). SPECTRE is not aligned to any nation or political ideology, enabling the later Bond books and Bond films to be regarded as somewhat apolitical though the former Gestapo members are a clear sign of Fleming's warning of the Nazi fascists surviving after WWII first detailed in the novel Moonraker (1954). SPECTRE began in the novels as a small group of criminals but became a vast international organization with its own SPECTRE Island training base in the films, to replace the Soviet SMERSH.
+                                <br/><br/>
+                                <span>I</span>n the aftermath of Raoul Silva's attack on MI6, a cryptic message sets in motion events that will see James Bond come face-to-face with the sinister organisation known as SPECTRE. While Gareth Mallory, the newly appointed M, continues fighting political pressures that threaten the future of MI6, Bond discovers that the only way to unravel the web of conspiracy is to protect the innocent daughter of a powerful enemy. Following a trail from Mexico to Italy, Austria and Morocco, he is forced to operate outside his purview as he is drawn into a confrontation with an enemy from his past. 
+                                <br/><br/>
+                                <span>R</span>eleased on 26 October 2015 in the United Kingdom on the same night as the world premiere in London, followed by the worldwide release on 6 November.
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- section-story end -->
+
+
+                <div class="section section-cast" id="cast">
+                    <div class="row">
+                        <h2>THE CASTS</h2>
+                    </div>
+                    <div class="cast scrollcontainer">
+                        <div class="container">
+                            <p class="actor"><span class="firstname">James Bond</span><br />Agent 007.</p>
+                            <a class="thumbnail" href="#">Daniel Craig</a>
+                            <div class="content">
+                                <span class="name">Daniel Craig</span>
+                                <hr>
+                                <a href="images/actor/actor01.jpg" data-lightbox="actor1">
+                                    <img src="images/actor/actor01.jpg">
+                                </a>                            
+                                <p>Daniel Wroughton Craig (born 2 March 1968) is an English actor, who trained at the National Youth Theatre and graduated from the Guildhall School of Music and Drama in 1991, beginning his career on stage. His film debut was in the drama The Power of One (1992).Cast as the fictional British secret agent James Bond 007 in October 2005, his first film in the role, Casino Royale, was released in cinemas worldwide in November 2006.</p><br/>
+
+                                <p>The first film, Casino Royale, premiered 14 November 2006, and grossed a total of US$594,239,066 worldwide, which made it the highest-grossing Bond film until the release of Skyfall. As production of Casino Royale reached its conclusion, producers Michael G. Wilson and Barbara Broccoli announced that pre-production work had already begun on the 22nd Bond film.</p><br/>
+
+                                <p>Quantum of Solace followed two years later. Craig's third Bond film, Skyfall, premiered in 2012 and is now the highest-grossing film in the series, as well as the twelfth highest-grossing film of all time.Craig's fourth Bond film, Spectre, will premiere in 2015. In 2006, he joined the Academy of Motion Picture Arts and Sciences. Since taking the role of Bond, he has continued to appear in other films. He made a guest appearance as Bond in the opening ceremony of the London 2012 Olympic Games, alongside Queen Elizabeth II.</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Lucia Sciarra</span><br />The widow of an assassin killed by Bond.</p>
+                            <a class="thumbnail" href="#">Monica Bellucci</a>
+                            <div class="content">
+                                <span class="name">Monica Bellucci</span>
+                                <hr>
+                                <a href="images/actor/actor02.jpg" data-lightbox="actor2">
+                                    <img src="images/actor/actor02.jpg">
+                                </a> 
+                                <p>Monica Bellucci (Italian pronunciation: [ˈmɔːnika belˈluttʃi], born 30 September 1964) is an Italian actress and fashion model. Bellucci began her career as a model and made a transition to Italian films. She is known in Hollywood films as Persephone in the 2003 science fiction films The Matrix Reloaded and The Matrix Revolutions, and as Mary Magdalene in the 2004 biblical drama The Passion of the Christ. Bellucci will portray a Bond girl in the upcoming James Bond film Spectre, making her the oldest Bond girl in the franchise.</p><br/>
+
+                                <p>Bellucci was born in Città di Castello, Umbria, Italy as the only child of Brunella Briganti and Pasquale Bellucci, and she grew up in San Giustino.</p><br/>
+
+                                <p>Bellucci's modelling career is managed by Elite+ in New York City. She is considered an Italian sex symbol.From 2006 to 2010 she was the face of a range of Dior products.Bellucci is signed to D'management group in Milan and also to Storm Model Management in London.</p><br/>
+
+                                <p>Empire magazine selected her as twenty-first on their list of "The Sexiest 25 Characters in Cinema - The Women" for her role of "Persephone" in the Matrix series. At 50, she will be the oldest Bond girl ever in the next James Bond movie, playing Lucia Sciarra in Spectre (2015).</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Franz Oberhauser</span><br />A mysterious figure within SPECTRE who claims a personal connection to Bond.</p>
+                            <a class="thumbnail" href="#">Christoph Waltz</a>
+                            <div class="content">
+                                <span class="name">Christoph Waltz</span>
+                                <hr>
+                                <a href="images/actor/actor03.jpg" data-lightbox="actor3">
+                                    <img src="images/actor/actor03.jpg">
+                                </a> 
+                                <p>Christoph Waltz (German pronunciation: [ˈkrɪstɔf ˈvalts]; born 4 October 1956) is a German-Austrian actor.</p><br/>
+
+                                <p>Waltz was born in Vienna, the son of German-born Johannes Waltz and Austrian-born Elisabeth Urbancic, set and costume designers.His maternal grandfather, Rudolf von Urban, was a psychiatrist and psychologist who wrote the book Sex Perfection and Marital Happiness.His maternal grandmother was Burgtheater actress Maria Mayen, and his step-grandfather was actor Emmerich Reimers. His great-grandparents also worked in theatre.
+                                Waltz studied acting at the Max Reinhardt Seminar in Vienna. In the late 1970s, Waltz spent some time in New York City where he studied method acting with Lee Strasberg and Stella Adler. He started as a stage actor, performing at venues such as Zurich's Schauspielhaus Zürich, Vienna's Burgtheater, and the Salzburg Festival. He became a prolific television actor in the years 1980 to 2000. </p><br/>
+
+                                <p>He is best known for his works with American filmmaker Quentin Tarantino, receiving acclaim for portraying SS-Standartenführer Hans Landa in Inglourious Basterds (2009) and bounty hunter Dr. King Schultz in Django Unchained (2012).Waltz will appear as Franz Oberhauser in Spectre, the twenty-fourth James Bond film.</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Mr. Hinx</span><br />An assassin and a high-ranking member of SPECTRE.</p>
+                            <a class="thumbnail" href="#">Dave Batista</a>
+                            <div class="content">
+                                <span class="name">Dave Batista</span>
+                                <hr>
+                                <a href="images/actor/actor04.jpg" data-lightbox="actor4">
+                                    <img src="images/actor/actor04.jpg">
+                                </a> 
+                                <p>David Michael "Dave" Bautista Jr. (born January 18, 1969)is an American actor and former professional mixed martial artist and professional wrestler, signed to WWE under the ring name Batista.</p><br/>
+
+                                <p>He is a six-time world champion.He is the longest-reigning consecutive days World Heavyweight Champion in WWE history, and has won the World Tag Team Championship three times (twice with Ric Flair and once with John Cena) and the WWE Tag Team Championship once (with Rey Mysterio). He was the winner of the 2005 Royal Rumble match and went on to headline WrestleMania 21, one of the top five highest-grossing pay-per-view events in pro wrestling history. Batista also won the 2014 Royal Rumble match, after which he headlined WrestleMania XXX.</p><br/>
+
+                                <p>In August 2012, Batista signed a contract with Classic Entertainment & Sports to fight in mixed martial arts.He won his MMA debut on October 6, 2012, and defeating Vince Lucero via TKO in the first round. He was representing the Philippines.As an actor, Batista has starred in The Man with the Iron Fists (2012), Riddick (2013), Guardians of the Galaxy (2014), and will appear in the Kickboxer reboot and 24th James Bond film, Spectre, due for release in 2015.He has also appeared in several direct-to-video films since 2009.</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Gareth Mallory</span><br />The head of MI6 and Bond's superior who is better-known by his code-name, M.</p>
+                            <a class="thumbnail" href="#">Ralph Fiennes</a>
+                            <div class="content">
+                                <span class="name">Ralph Fiennes</span>
+                                <hr>
+                                <a href="images/actor/actor05.jpg" data-lightbox="actor5">
+                                    <img src="images/actor/actor05.jpg">
+                                </a> 
+                                <p>Ralph Nathaniel Twisleton-Wykeham-Fiennes (born 22 December 1962), is an English actor. </p><br/>
+
+                                <p>Fiennes' portrayal of Nazi war criminal Amon Goeth in Schindler's List (1993) earned him nominations for the Academy Award for Best Supporting Actor and the Golden Globe Award for Best Supporting Actor, and he won the BAFTA Award for Best Actor in a Supporting Role. His performance as Count Almásy in The English Patient (1996) garnered him a second Academy Award nomination, for Best Actor, as well as BAFTA and Golden Globe nominations.</p><br/>
+
+                                <p>Since then, Fiennes has been in a number of notable films. He is also known for his roles in major film franchises such as the Harry Potter film series (2005–2011), in which he played Lord Voldemort, and the James Bond series, in which he has played M, starting with the 2012 film Skyfall.</p><br/>
+
+                                <p>In 2011, Fiennes made his directorial debut with his film adaptation of Shakespeare's tragedy Coriolanus, in which he also played the title character. Fiennes won a Tony Award for playing Prince Hamlet on Broadway. Since 1999, Fiennes has served as an ambassador for UNICEF UK.</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Dr. Madeleine Swann</span><br />A psychologist working at a private medical clinic.</p>
+                            <a class="thumbnail" href="#">Léa Seydoux</a>
+                            <div class="content">
+                                <span class="name">Léa Seydoux</span>
+                                <hr>
+                                <a href="images/actor/actor06.jpg" data-lightbox="actor6">
+                                    <img src="images/actor/actor06.jpg">
+                                </a> 
+                                <p>Léa Seydoux (born Léa Hélène Seydoux-Fornier de Clausonne; 1 July 1985) is a French actress. She began her acting career in French cinema, appearing in films such as The Last Mistress (2007) and On War (2008). She first came to attention after she received her first César Award nomination for her performance in The Beautiful Person (2008) and won the Trophée Chopard, an award given to up-and-coming actors at the Cannes Film Festival.</p><br/>
+
+                                <p>In French cinema, she was nominated for the César Award for Most Promising Actress for a second time for her role in Belle Épine (2010) and was nominated for the César Award for Best Actress for the film Farewell, My Queen (2012). In 2013, Seydoux came to widespread attention when she was awarded the Palme d'Or at the Cannes Film Festival for her role in the critically acclaimed film Blue Is the Warmest Colour. That same year, she also received the Lumières Award for Best Actress for the film Grand Central and, in 2014, she was nominated for the BAFTA Rising Star Award and starred in the films Beauty and the Beast, The Grand Budapest Hotel and Saint Laurent.</p><br/>
+
+                                <p>In October 2014, it was announced she has been cast as Madeleine Swann, the next Bond girl, in Spectre, the 24th James Bond film, which is scheduled for release on 6 November 2015.</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Q</span><br />The MI6 quartermaster who outfits Bond with equipment for use in the field.</p>
+                            <a class="thumbnail" href="#">Ben Whishaw</a>
+                            <div class="content">
+                                <span class="name">Ben Whishaw</span>
+                                <hr>
+                                <a href="images/actor/actor07.jpg" data-lightbox="actor7">
+                                    <img src="images/actor/actor07.jpg">
+                                </a> 
+                                <p>Benjamin John "Ben" Whishaw (born 14 October 1980) is an English actor. Whishaw was born and raised in Clifton, Bedfordshire, the son of Linda (née Hope), who works in cosmetics, and Jose Whishaw, who works in information technology. He attended Henlow Middle School and then Samuel Whitbread Community College in Shefford where he first rose to prominence during collaborations with their offshoot theatre company, Big Spirit. He graduated from the Royal Academy of Dramatic Art in 2003.</p><br/>
+
+                                <p>Whishaw was involved in many productions with Big Spirit, perhaps most notably If This is a Man (also performed as The Drowned & The Saved), a piece devised by the company based on the book of the same name by Primo Levi, a survivor of Auschwitz concentration camp. It was adapted into a physical theatre piece by the group and taken to the 1995 Edinburgh Festival, where it garnered five-star reviews and great critical acclaim.</p><br/>
+
+                                <p>He is known for his stage role as Hamlet; his roles in the television series Nathan Barley, Criminal Justice, and The Hour; and film roles including Perfume: The Story of a Murderer, I'm Not There, Bright Star, Brideshead Revisited, and Cloud Atlas. He played the role of Q in the James Bond film Skyfall,and was the voice of Paddington Bear in the 2014 film, Paddington.</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <p class="actor"><span class="firstname">Max Denbigh</span><br />A member of the British government.</p>
+                            <a class="thumbnail" href="#">Andrew Scott</a>
+                            <div class="content">
+                                <span class="name">Andrew Scott</span>
+                                <hr>
+                                <a href="images/actor/actor08.jpg" data-lightbox="actor8">
+                                    <img src="images/actor/actor08.jpg">
+                                </a> 
+                                <p>Andrew Scott (born October 21, 1976) is an Irish film, television, and stage actor. He received the 2005 Laurence Olivier Award for Outstanding Achievement in an Affiliate Theatre for the Jerwood Theatre Upstairs production of A Girl in a Car with a Man, and an IFTA award for the film Dead Bodies. </p><br/>
+
+                                <p>Scott's notable television roles have included Paul McCartney in the BBC television drama Lennon Naked and arch-villain Jim Moriarty in Sherlock, for which he was awarded the 2012 British Academy Television Award for Best Supporting Actor, along with the 2013 award for Best Supporting Actor in the television category at the Irish Film and Television Awards He also won the awards for Best Supporting Actor and Best Actor consecutively in the 2012 and 2013 BBC Audio Drama Awards for his roles in Nick Perry's Referee and Harold Pinter's Betrayal, respectively. Alongside this, Scott was nominated as Best Lead Actor for his role in The Stag at the 2014 Irish Film and Television Awards.</p><br/>
+
+                                <p>Scott was ranked at number 22 in The Independent's Rainbow List 2014: 101 lesbian, bisexual, gay and transgender people who 'make a real difference'.</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div id="modal">
+                        <div class="modal-close"></div>
+                        <div class="modal_content"></div>
+                    </div>
+                    <div id="overlay"></div>      
+                </div> <!-- section-cast end -->
+
+                
+                <div class="section section-exhibition" id="exhibition">
+                    <div class="fp-controlArrow fp-prev"><img src="images/prev.png"></div>
+
+                    <div class="slide slide1" id="cars">
+                        <div class="row">
+                            <h2>CARS</h2>
+                        </div>
+                        <div class="exhibox exhibox1 scrollcontainer">
+                            <div class="exhiimg">
+                                <a href="images/car/car1.jpg" data-lightbox="car">
+                                    <img src="images/car/fcar1.jpg">
+                                </a>  
+                            </div>
+                            <div class="exhititle">
+                                <p><span>SPECTRE CARS ON DISPLAY IN FRANKFURT</span></p><br />
+                                <p>Vehicles at Frankfurt Motor Show</p>  
+                            </div>
+                            <div class="exhitext">
+                                <p>Vehicles from SPECTRE were on display at the Frankfurt Motor Show this week. The Jaguar C-X75, Range Rover Sport SVR and Land Rover Defender were unveiled at the event which was attended by SPECTRE cast members Naomie Harris (Moneypenny) and David Bautista (Hinx).</p>  
+                            </div>
+                            <div class="exhi">
+                                <ul class="content-slider">
+                                    <li>
+                                        <a href="images/car/car2.jpg" data-lightbox="car">
+                                            <img src="images/car/car2.jpg">
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="images/car/car3.jpg" data-lightbox="car">
+                                            <img src="images/car/car3.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/car/car4.jpg" data-lightbox="car">
+                                            <img src="images/car/car4.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/car/car5.jpg" data-lightbox="car">
+                                            <img src="images/car/car5.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/car/car6.jpg" data-lightbox="car">
+                                            <img src="images/car/car6.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/car/car7.jpg" data-lightbox="car">
+                                            <img src="images/car/car7.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/car/car8.jpg" data-lightbox="car">
+                                            <img src="images/car/car8.jpg">
+                                        </a>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide slide2" id="watches">
+                        <div class="row">
+                            <h2>WATCHES</h2>
+                        </div>
+                        <div class="exhibox exhibox2 scrollcontainer">
+                            <div class="exhiimg">
+                                <a href="images/watch/watch1.jpg" data-lightbox="watch">
+                                    <img src="images/watch/fwatch1.jpg">
+                                </a>  
+                            </div>
+                            <div class="exhititle">
+                                <p><span>OMEGA RELEASE NEW BOND-INSPIRED TIMEPIECE</span></p><br />
+                                <p>Seamaster Aqua Terra 150m</p>  
+                            </div>
+                            <div class="exhitext">
+                                <p>OMEGA Watches has created the limited edition Seamaster Aqua Terra 150M. The blue face of the 41.5mm stainless steel watch features the Bond family coat of arms in a repeatedly interlocked pattern. The symbol is also found near the tip of the second hand.</p>  
+                            </div>
+                            <div class="exhi">
+                                <ul class="content-slider">
+                                    <li>
+                                        <a href="images/watch/watch2.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch2.jpg">
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="images/watch/watch3.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch3.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/watch/watch4.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch4.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/watch/watch5.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch5.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/watch/watch6.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch6.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/watch/watch7.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch7.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/watch/watch8.jpg" data-lightbox="watch">
+                                            <img src="images/watch/watch8.jpg">
+                                        </a>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide slide3" id="wines">
+                        <div class="row">
+                            <h2>WINES</h2>
+                        </div>
+                        
+                        <div class="exhibox exhibox3 scrollcontainer">
+                            <div class="exhiimg">
+                                <a href="images/wine/wine1.jpg" data-lightbox="wine">
+                                    <img src="images/wine/fwine1.jpg">
+                                </a>  
+                            </div>
+                            <div class="exhititle">
+                                <p><span>BELVEDERE VODKA SPECTRE</span></p><br />
+                                <p>Partnership launched in London</p>  
+                            </div>
+                            <div class="exhitext">
+                                <p>James Bond has always been a vodka drinker and the spirit has always been a part of his signature Martini, shaken, not stirred. After drinking Wolfschmidth in the novel Moonraker, Bond will now partner up with the Polish Belvedere Vodka in the movie SPECTRE of 2015.</p>  
+                            </div>
+                            <div class="exhi">
+                                <ul class="content-slider">
+                                    <li>
+                                        <a href="images/wine/wine2.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine2.jpg">
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="images/wine/wine3.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine3.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/wine/wine4.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine4.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/wine/wine5.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine5.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/wine/wine6.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine6.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/wine/wine7.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine7.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/wine/wine8.jpg" data-lightbox="wine">
+                                            <img src="images/wine/wine8.jpg">
+                                        </a>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide slide4" id="festival">
+                        <div class="row">
+                            <h2>FESTIVAL</h2>
+                        </div>
+                        <div class="exhibox exhibox4 scrollcontainer">
+                            <div class="exhiimg">
+                                <a href="images/festival/festival1.jpg" data-lightbox="festival">
+                                    <img src="images/festival/ffestival1.jpg">
+                                </a>  
+                            </div>
+                            <div class="exhititle">
+                                <p><span>SPECTRE VLOG FEATURES DAY OF THE DEAD FESTIVAL</span></p><br />
+                                <p>Behind the scenes in Mexico</p>  
+                            </div>
+                            <div class="exhitext">
+                                <p>The latest SPECTRE vlog focuses on filming the opening sequence set during the Day of the Dead festival in Mexico City. “I wanted the audience to be dropped right into the middle of a very, very specific, very heady, rich environment.” says Director Sam Mendes.</p>  
+                            </div>
+                            <div class="exhi">
+                                <ul class="content-slider">
+                                    <li>
+                                        <a href="images/festival/festival2.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival2.jpg">
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="images/festival/festival3.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival3.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/festival/festival4.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival4.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/festival/festival5.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival5.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/festival/festival6.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival6.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/festival/festival7.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival7.jpg">
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="images/festival/festival8.jpg" data-lightbox="festival">
+                                            <img src="images/festival/festival8.jpg">
+                                        </a>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide slide5" id="special">
+                        <div class="row">
+                            <h2>SPECIAL</h2>
+                        </div>
+                        <div class="exhibox exhibox5 scrollcontainer">
+                            <div class="exhiimg">
+                                <a href="images/special/special1.jpg" data-lightbox="special">
+                                    <img src="images/special/fspecial1.jpg">
+                                </a>  
+                            </div>
+                            <div class="exhititle">
+                                <p><span>ICONIC SPECTRE PROP ADDED TO EXHIBITION</span></p>
+                            </div>
+                            <div class="exhitext">
+                                <p>An iconic ring and clapperboard from SPECTRE have been added to the Designing in Madrid. This type of ring, which has the famous SPECTRE organisation logo on it, first appeared in the film FROM RUSSIA WITH LOVE in 1963, but has been updated for SPECTRE.</p>  
+                            </div>
+                            <div class="exhi">
+                                <ul class="content-slider">
+                                    <li>
+                                        <a href="images/special/special2.jpg" data-lightbox="special">
+                                            <img src="images/special/special2.jpg">
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="images/special/special3.jpg" data-lightbox="special">
+                                            <img src="images/special/special3.jpg">
+                                        </a>   
+                                    </li>                                     
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide slide6" id="posters">
+                        <div class="row">
+                            <h2>POSTERS</h2>
+                        </div>
+                        <div class="container scrollcontainer">                
+                            <ul id="gallery">
+                                <li>
+                                    <a href="images/poster/1.jpg" data-lightbox="posters">
+                                        <img src="images/poster/1.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/2.jpg" data-lightbox="posters">
+                                        <img src="images/poster/2.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/3.jpg" data-lightbox="posters">
+                                        <img src="images/poster/3.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/4.jpg" data-lightbox="posters">
+                                        <img src="images/poster/4.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/5.jpg" data-lightbox="posters">
+                                        <img src="images/poster/5.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/6.jpg" data-lightbox="posters">
+                                        <img src="images/poster/6.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/7.jpg" data-lightbox="posters">
+                                        <img src="images/poster/7.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/8.jpg" data-lightbox="posters">
+                                        <img src="images/poster/8.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/9.jpg" data-lightbox="posters">
+                                        <img src="images/poster/9.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/10.jpg" data-lightbox="posters">
+                                        <img src="images/poster/10.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/11.jpg" data-lightbox="posters">
+                                        <img src="images/poster/11.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/12.jpg" data-lightbox="posters">
+                                        <img src="images/poster/12.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/13.jpg" data-lightbox="posters">
+                                        <img src="images/poster/13.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/14.jpg" data-lightbox="posters">
+                                        <img src="images/poster/14.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/poster/15.jpg" data-lightbox="posters">
+                                        <img src="images/poster/15.jpg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div class="fp-controlArrow fp-next"><img src="images/next.png"></div>
+                </div> <!-- section-exhibition end -->        
+
+
+                <div class="section section-gallery" id="gallery">
+                    <div class="row">
+                        <h2>PHOTO GALLERY</h2>
+                    </div>
+                    <div id="carousel">
+                        <a href="images/film/1.jpg" data-lightbox="photo">
+                            <img src="images/film/f1.jpg">
+                        </a>
+                        <a href="images/film/2.jpg" data-lightbox="photo">
+                            <img src="images/film/f2.jpg">
+                        </a>
+                        <a href="images/film/3.jpg" data-lightbox="photo">
+                            <img src="images/film/f3.jpg">
+                        </a>
+                        <a href="images/film/4.jpg" data-lightbox="photo">
+                            <img src="images/film/f4.jpg">
+                        </a>
+                        <a href="images/film/5.jpg" data-lightbox="photo">
+                            <img src="images/film/f5.jpg">
+                        </a>
+                        <a href="images/film/6.jpg" data-lightbox="photo">
+                            <img src="images/film/f6.jpg">
+                        </a>
+                        <a href="images/film/7.jpg" data-lightbox="photo">
+                            <img src="images/film/f7.jpg">
+                        </a>
+                        <a href="images/film/8.jpg" data-lightbox="photo">
+                            <img src="images/film/f8.jpg">
+                        </a>
+                        <a href="images/film/9.jpg" data-lightbox="photo">
+                            <img src="images/film/f9.jpg">
+                        </a>
+                        <a href="images/film/10.jpg" data-lightbox="photo">
+                            <img src="images/film/f10.jpg">
+                        </a>
+                        <a href="images/film/11.jpg" data-lightbox="photo">
+                            <img src="images/film/f11.jpg">
+                        </a>
+                        <a href="images/film/12.jpg" data-lightbox="photo">
+                            <img src="images/film/f12.jpg">
+                        </a>
+                        <a href="images/film/13.jpg" data-lightbox="photo">
+                            <img src="images/film/f13.jpg">
+                        </a>
+                        <a href="images/film/14.jpg" data-lightbox="photo">
+                            <img src="images/film/f14.jpg">
+                        </a>
+                        <a href="images/film/15.jpg" data-lightbox="photo">
+                            <img src="images/film/f15.jpg">
+                        </a>
+                        <a href="images/film/16.jpg" data-lightbox="photo">
+                            <img src="images/film/f16.jpg">
+                        </a>
+                        <a href="images/film/17.jpg" data-lightbox="photo">
+                            <img src="images/film/f17.jpg">
+                        </a>
+                        <a href="images/film/18.jpg" data-lightbox="photo">
+                            <img src="images/film/f18.jpg">
+                        </a>
+                        <a href="images/film/19.jpg" data-lightbox="photo">
+                            <img src="images/film/f19.jpg">
+                        </a>
+                        <a href="images/film/20.jpg" data-lightbox="photo">
+                            <img src="images/film/f20.jpg">
+                        </a>
+                        <a href="images/film/21.jpg" data-lightbox="photo">
+                            <img src="images/film/f21.jpg">
+                        </a>
+                        <a href="images/film/22.jpg" data-lightbox="photo">
+                            <img src="images/film/f22.jpg">
+                        </a>
+                        <a href="images/film/23.jpg" data-lightbox="photo">
+                            <img src="images/film/f23.jpg">
+                        </a>
+                        <a href="images/film/24.jpg" data-lightbox="photo">
+                            <img src="images/film/f24.jpg">
+                        </a>
+                        <a href="images/film/25.jpg" data-lightbox="photo">
+                            <img src="images/film/f25.jpg">
+                        </a>
+                        <a href="images/film/26.jpg" data-lightbox="photo">
+                            <img src="images/film/f26.jpg">
+                        </a>
+                    </div> 
+                    
+                </div> <!-- section-gallery end -->
+
+
+                <div class="section section-audio" id="audio">
+                    <div class="row">
+                        <h2>SOUNDTRACK</h2>
+                    </div>
+
+                    <div class="cover">
+                        <img src="images/audio/cover1.jpg" />
+                    </div>
+
+                    <div id="audiocontainer" class="scrollcontainer">
+                        <div>
+                            <h1>Various Artists - Best Of Bond</h1>
+                            <h6>James Bond 50 Years (2012)</h6>
+                            <br>
+                        </div>                        
+
+                        <div id="audio-player">
+                            <div id="audio-info">
+                                <span class="artist">paused...</span>&nbsp;<span class="title">waitting...</span>
+                            </div>                            
+                            <div class="clearfix"></div>
+                            <div id="tracker">
+                                <a id="play"><i class="ion-ios-play-outline"></i></a>
+                                <div id="progress-bar">
+                                    <span id="progress"></span>
+                                </div>
+                                <span id="duration">0:00</span>
+                                <input id="volume" type="range" min="0" max="10" value="4">
+                            </div>
+                            <div id="mp3buttons">
+                                <span>
+                                    <a id="prev"><i class="ion-ios-rewind-outline"></i></a>
+                                    <a id="pause"><i class="ion-ios-pause-outline"></i></a>
+                                    <a id="next"><i class="ion-ios-fastforward-outline"></i></a>
+                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <ul id="playlist" class="hidden">
+                                <li class="active" song="01 James Bond Theme.mp3" artist="Monty Norman -">01 James Bond Theme</li>
+                                <li class="active" song="02 From Russia With Love.mp3" artist="Lionel Bart -">02 From Russia With Love</li>
+                                <li class="active" song="03 Goldfinger.mp3" artist="John Barry, Anthony Newley & Leslie Bricusse -">03 Goldfinger</li>
+                                <li class="active" song="04 Thunderball.mp3" artist="John Barry & Don Black -">04 Thunderball</li>
+                                <li class="active" song="05 You Only Live Twice.mp3" artist="John Barry & Leslie Bricusse -">05 You Only Live Twice</li>
+                                <li class="active" song="06 On Her Majesty's Secret Service.mp3" artist="John Barry -">06 On Her Majesty's Secret Service</li>
+                                <li class="active" song="07 We Have All the Time In the Wor.mp3" artist="John Barry & Hal David -">07 We Have All the Time In the Wor</li>
+                                <li class="active" song="08 Diamonds Are Forever.mp3" artist="John Barry & Don Black -">08 Diamonds Are Forever</li>
+                                <li class="active" song="09 Live and Let Die.mp3" artist="Paul McCartney & Linda McCartney -">09 Live and Let Die</li>
+                                <li class="active" song="10 The Man With the Golden Gun.mp3" artist="John Barry -">10 The Man With the Golden Gun</li>                   
+                            </ul>
+                        </div>
+                        
+                    </div>                    
+                    
+                </div> <!-- section-audio end -->
+
+            </div> <!-- fullscreen end -->
+
+        </div> <!-- allpage end -->
+
+        <div class="footer">
+                <div  class="footer-nav span-5-of-7" >
+                    <ul>
+                        <li><a href="#page1">Home</a></li>
+                        <li><a href="#page2">Introduction</a></li>
+                        <li><a href="#page3">Story</a></li>
+                        <li><a href="#page4">Cast</a></li>
+                        <li><a href="#page5">Exhibition</a></li>
+                        <li><a href="#page6">Gallery</a></li>
+                        <li><a href="#page7">Audio</a></li>
+                    </ul>
+                </div>
+                <div class="social-links span-2-of-7">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="www.youtube.com/"><i class="ion-social-youtube"></i></a></li>
+                    </ul>
+                </div>  
+                <div class="copyright">
+                    &copy; 2015 By Shi Jun.<a href="#page1"><i class="ion-ios-heart"></i></a> All Rights Reserved.
+                </div>
+        </div> <!-- footer end -->
+
+        <script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>

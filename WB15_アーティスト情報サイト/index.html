@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<title>EASON・CHAN</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+		<link rel="stylesheet" type="text/css" href="css/queries.css">
+        <link rel="stylesheet" type="text/css" href="css/theme-minimalist-round.css">
+        <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+        <link rel="icon" type="image/png" href="images/title.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="js/jquery.anythingslider.js"></script>
+        <script type="text/javascript" src="js/perfect-scrollbar.jquery.js"></script>
+        <script type="text/javascript" src="js/lightbox.js"></script>
+
+        <script>
+            // Set up Sliders
+            // **************
+            $(function(){
+                $('#slider').anythingSlider({
+                    theme           : 'minimalist-round',
+                    easing          : 'easeInOutBack',
+                    navigationFormatter : function(index, panel){
+                        return ['1', '2', '3', '4', '5', '6'][index - 1];
+                    },
+                    onSlideComplete : function(slider){
+                        // alert('Welcome to Slide #' + slider.currentPage);
+                    }
+                });
+            });
+        </script>
+        <script>
+            jQuery(document).ready(function($){
+                $('.scrollcontainer').perfectScrollbar()
+            });
+        </script>
+
+	</head>
+
+	<body>
+		<header id="mains">
+			<nav>
+				<div class="row">
+					<img src="images/logo.png" alt="chen's logo" class="logo">
+                    <img src="images/logo-black.png" alt="chen's logo" class="logo-black">
+					<ul class="main-nav">
+						<li><a href="#mains">Home</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#biogs">Biography</a></li>
+						<li><a href="#discs">Discography</a></li>
+						<li><a href="#specs">Special</a></li>
+					</ul>
+                    <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+				</div>
+			</nav>
+			<div class="hero-text-box row">
+				<h1>E A S O N・C H A N（陳奕迅）</h1>
+				<a class="btn btn-full js-scroll-to-biog" href="#">Information</a>
+				<a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
+			</div>
+        </header>
+
+
+		<section class="section-main js-section-main">
+			<div class="row">
+                <h2>E A S O N・C H A N &mdash; 陳奕迅</h2>
+                <p class="long-copy">
+                    陈奕迅（Eason Chan），1974年7月27日出生于香港，中国香港流行男歌手、演员。陈奕迅是华语流行音乐的代表人物之一，被誉为华语流行音乐张学友的接班人。曾被美国《时代》杂志形容为影响香港乐坛风格的人物。2005年推出的专辑《U87》被《时代》杂志评为2005年亚洲五张最值得购买的专辑。陈奕迅是一个实力派的歌手，他的许多歌被人熟悉，比如说《十年》、《爱情转移》，而且在他部分歌曲是具有深意，像《浮夸》和《最佳损友》。
+                </p>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <a href="#news">
+                        <i class="ion-ios-paper-outline icon-big"></i>
+                        <h3>News</h3>
+                        <img src="images/news.jpg" />
+                    </a>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <a href="#biogs">
+                        <i class="ion-ios-person-outline icon-big"></i>
+                        <h3>Biography</h3>
+                        <img src="images/biog.jpg" />
+                    </a>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <a href="#discs">
+                        <i class="ion-ios-musical-notes icon-big"></i>
+                        <h3>Discography</h3>
+                        <img src="images/disc.jpg" />
+                    </a>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <a href="#specs">
+                        <i class="ion-ios-film-outline icon-big"></i>
+                        <h3>Special</h3>
+                        <img src="images/special.jpg" />
+                    </a>
+                </div>
+            </div>   
+		</section>
+
+        <section class="section-news" id="news">
+            <div class="row">
+                <h2>NEWS</h2>
+            </div>
+            <div class="row">
+                <ul id="slider">
+                    <li id="new1">
+                        <div>
+                            <img src="images/news01.jpg" alt="华丽上班族">
+                        </div>
+                        <div>
+                            <span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杜琪峰导演，杜琪峰、张艾嘉监制，周润发、张艾嘉、陈奕迅、汤唯联袂演出的《华丽上班族》，将于今年9月2日3D献映。25日，电影《华丽上班族》举行电影发布会。陈奕迅、张艾嘉、杜琪峰组成的“关爱上班族协会”华丽登场。片中的“上班族”Eason现实中有了工作室，竟坦言“只是写写支票而已”。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陈奕迅还对广大上班族们建议“不要太晚睡觉，对精神不好，毕竟我是神经研究所所长。”
+                            </span>
+                        </div>
+                    </li>
+
+                    <li id="new2">
+                        <iframe width="900" height="480" src="https://www.youtube.com/embed/8_Cp2fJo9VQ" frameborder="0" allowfullscreen></iframe>
+                    </li>
+
+                    <li id="new3">
+                        <div>
+                            <img src="images/news03.jpg" alt="第26届台湾金曲奖">
+                        </div>
+                        <div>
+                            <span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第26届台湾金曲奖6月27日举行，最佳男歌手由张学友、陈奕迅、方大同、韦礼安 、杨培安争夺，最佳女歌手莫文蔚、张惠妹、魏如萱、徐佳莹 、A-Lin角逐。最终陈奕迅张惠妹获封歌王歌后。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陈奕迅凭借专辑《米・闪》夺得最佳男歌手。
+                            </span>
+                        </div>
+                    </li>
+
+                    <li id="new4">
+                        <div>
+                            <iframe width="440" height="280" src="https://www.youtube.com/embed/UvuEhVrY9wk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="scrollcontainer new4div">
+                            <div>
+                                <h4>26届金曲奖陈奕迅串烧歌单</h4>
+                                1.婚礼的祝福 陈奕迅<br>
+                                2.我是不是该安静的走开 郭富城<br>
+                                3.神啊救救我 陈小春<br>
+                                4.你的眼睛背叛了你的心 郑中基<br>
+                                5.半梦半醒之间 谭咏麟<br>
+                                6.不走 杜德伟<br>
+                                7.流言 林隆璇/周慧敏<br>
+                                8.想说 许志安<br>
+                                9.因为爱所以爱 谢霆锋<br>
+                                10.忘情水 刘德华<br>
+                                11.宝贝对不起 草蜢<br>
+                                12.对你爱不完 郭富城<br>
+                                13.短发 梁咏琪<br>
+                                14.值得 郑秀文<br>
+                                15.伤痕 林忆莲<br>
+                                16.今夜你会不会来 黎明<br>
+                                17.忘了时间的钟 古巨基<br>
+                                18.光辉岁月 Beyond<br>
+                                19.男人不该让女人流泪 苏永康<br>
+                                20.放开你的头脑 梅艳芳<br>
+                                21.谢谢侬 陈奕迅<br>
+                                22.他不爱我 莫文蔚<br>
+                                23.我 张国荣
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="new5">
+                        <div id="newspic">
+                            <img src="images/news05.jpg" alt="chen's concert" />
+                        </div>
+                        <div id="newstext">                           
+                            <span class="new5span">Tour Title:</span><br>
+                            Eason Chan concert ANOTHER EASON'S LIFE<br>
+                            <span class="new5span">Starting Time:</span>&nbsp;&nbsp;&nbsp;2015.04.04<br>
+                            <span class="new5span">End Time:</span>&nbsp;&nbsp;&nbsp;~<br>
+                            <span class="new5span">Ticketing total generation:</span><br>
+                            Barley net<br>
+                            <span class="new5span">URL:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.damai.cn">http://www.damai.cn</a>
+                        </div>
+                    </li>
+
+                    <li id="new6">
+                        <div>
+                            <img src="images/news06.jpg" alt="新作《准备中》">
+                        </div>
+                        <div  class="scrollcontainer new6div">
+                            <div>
+                                <h4>陈奕迅2015全新粤语专辑《准备中》，收录10首作品，于2015年7月10日发行。</h4><br>
+                                &nbsp;&nbsp;Getting Ready………<br>
+　　                            &nbsp;&nbsp;准备中……………<br>
+　　                            &nbsp;&nbsp;最常听到人家问的一句话就是“准备好了没”………<br><br>
+                                专辑歌单：<br>
+                                1.老细我撇先　作曲：Harris Russell　填词：袁两半<br>
+                                2.无条件　作曲：Eric Kwok　填词：袁两半<br>
+                                3.黑洞　作曲：曲世聪　填词：袁两半<br>
+                                4.心烧　作曲：Eric Kwok　填词：袁两半<br>
+                                5.喜欢一个人　作曲：Eric Kwok　填词：袁两半<br>
+                                6.人生马拉松　作曲：曲世聪　填词：袁两半<br>
+                                7.起点，终站　作曲：谢霆锋　填词：袁两半<br>
+                                8.一个人的灵魂独白　作曲：AGA　填词：袁两半<br>
+                                9 万圣节的一个传说　作曲：曲世聪　填词：袁两半<br>
+                                10.梦的可能　作曲：Harris Russell　填词：袁两半<br>
+                                11.异梦　作曲：Eric Kwok　填词：袁两半
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-biography js-section-biog" id="biogs">
+            <div class="row">
+                <h2>BIOGRAPHY</h2>
+            </div>
+            <div  class="scrollcontainer biogdiv">
+                <img src="images/biog01.jpg" alt="biography">
+                <span>                
+                    <h4><i class="ion-ios-pulse-strong"></i>&nbsp;演艺经历</h4><hr><br>
+                    <h5>・新秀比赛</h5><br>
+                    陈奕迅于1995年暑假期间回香港参加TVB举办的第14届新秀歌唱大赛，成为该届冠军，随即跟华星唱片公司签下歌星合约，正式踏入香港乐坛。 <br><br>
+                    <h5>・华星时期</h5><br>
+                    于1996年推出首张个人同名大碟《陈奕迅》，其后《与我常在》和《我的快乐时代》推出后，渐受大众认识及注视。《我的快乐时代》获得首个叱吒乐坛流行榜颁奖典礼的“叱吒乐坛至尊唱片大奖”。<br><br>
+                    1999年，发行《幸福》、《天佑爱人》和《新生活》 等专辑，其中的代表作如《幸福摩天轮》和《每一个明天》等。同年与梅艳芳合唱《同声一哭》。并在10月7日至10日于香港体育馆举行一连四场的“Big Live陈奕迅大个唱99”演唱会。<br><br>
+                    <h5>・英皇时期</h5><br>
+                    2000年陈奕迅转投英皇娱乐旗下品牌Music Plus，与谢霆锋，何嘉莉，王杰、容祖儿、叶佩雯等成为公司重要歌手[19]  ；相继推出的专辑大卖《打得火热》、《Shall We Dance? Shall We Talk!》、《The Easy Ride》、《The Line Up》、《Eason 4 A Change & Hits》和《Live For Today》均成为热卖作品，其中《Shall We Talk》、《打得火热》、《K歌之王》、《明年今日》均进占流行榜冠军。陈并于2000-2002年三度夺得“四台联颁音乐大奖--传媒大奖”，连续三届在香港四大电子传媒音乐颁奖典礼上获得奖项；在2001和2002年度《叱咤乐坛流行榜颁奖典礼》连续两次夺得“叱咤乐坛男歌手金奖”。而在英皇发展期间，于2001年及2003年在香港体育馆分别举行两次名为《The Easy Ride》（共9场）及《Third Encounter》（共7场）演唱会。<br><br>
+                    在2003年度凭国语专辑《Special Thanks To...》获得台湾金曲奖“最佳国语男演唱人”和“最佳专辑”，成为了继张学友后首位夺得这个奖项的香港男歌手，亦是第一个同时获得这两个奖项的香港歌手。<br><br>
+                    2003年他与英皇唱片公司因未能就续约问题达成共识关系, 而遭到“雪藏”（此处有争议）。同时其任职香港房屋署总屋宇设备工程师的父亲陈裘大被控受贿罪成入狱，此事对陈奕迅打击甚大。在整个2004年，除接拍电影外，陈奕迅的事业处于休息状态。<br><br>
+                    <h5>・新艺宝时期</h5><br>
+                    2005年，陈奕迅加盟环球唱片旗下新艺宝唱片公司，新城电台于3月17日举行一场名为新城唱好陈奕迅05出击音乐会。而作为“复出”的首张专辑《U87》亦于6月7日推出（U87是他录制专辑时的麦克风型号），四首主打歌（《夕阳无限好》、《阿牛》、《浮夸》及《葡萄成熟时》）获香港多个传媒流行榜周冠军。《U87》为2005年香港最高销售量的粤语非精选专辑。《U87》更获Time时代周刊选为“2005年最值得购买的五大亚洲唱片”。<br><br>
+                    2006年推出专辑《Life Continues》，主打歌《最佳损友》获香港多个传媒流行榜周冠军。2006年10月21日，于正东10周年演唱会与张学友合唱《热辣辣》、《天下太平》，及互唱《如果这都不算爱》、《最佳损友》，被许多人形容为新的“左麟右李”。<br><br>
+                    2006年2月，陈奕迅相隔3年后再次于香港体育馆举行了一连9场《Get a Life》演唱会，门票开售首天即售完。演唱会后推出EP《Life Continues》，主打歌《最佳损友》获香港多个传媒流行榜周冠军。其后获奥比斯选为“光明大使”，并探访印度的失明儿童。11月，推出专辑《What's Going On》，其中包括多首冠军歌如《裙下之臣》、《黑择明》和《富士山下》，《富士山下》的国语版《爱情转移》在2007年内地各颁奖礼上获得多个奖项。<br><br>
+                    2007年1月1日，于2006年度再度获得“叱咤乐坛男歌手金奖”和“叱咤乐坛我最喜爱的男歌手”两个大奖；1月13日，获得“2006最受欢迎男歌星”。  1月13日，于2006年度十大劲歌金曲颁奖典礼首次获得“最受欢迎男歌星”奖项。<br><br>
+                    2007年4月，推出国语专辑《认了吧》，在专辑宣传期间，分别于中港台各地举行校园巡回演唱会，并凭此专辑再次提名第19届台湾金曲奖“最佳国语男演唱人”，年度最佳港台专辑[34]  。10月，推出专辑《Listen to Eason Chan》，是为一次突破，整张专辑只有一首慢歌《crying in the party》，其余则是各种类型的快歌。 10月24日至11月6日、11月9日至10日，于香港体育馆举行《Eason's Moving On Stage 1》演唱会，一共六度加场至16场。其后两年展开世界巡回演唱会。<br><br>
+                    2008年1月1日，凭著《Listen to Eason Chan》于2007年度叱咤乐坛流行榜颁奖典礼获得“叱咤乐坛男歌手金奖”和“叱咤乐坛我最喜爱的男歌手”，是继2005年度的商台颁奖礼后，连续第三次同时夺得这两项大奖。2008年1月12日，于2007年度十大劲歌金曲颁奖典礼中同时获得“最受欢迎男歌星”及“亚太区最受欢迎香港男歌星”。1月20日，于2007年度十大中文金曲颁奖音乐会连续三届夺得“最优秀流行男歌手奖”、亦再次获得“四台联颁音乐大奖－传媒大奖”。第五次获得香港四大电子传媒音乐颁奖典礼的传媒大奖。8月13日，推出国语专辑《不想放手》。凭此专辑再次提名第20届台湾金曲奖“最佳国语男演唱人”及“最佳国语专辑奖”。<br><br>
+                    2009年1月1日，于2008年度叱咤乐坛流行榜颁奖典礼，连续四届获得“叱咤乐坛我最喜爱的男歌手”。1月3日，于2008年度十大劲歌金曲颁奖典礼连续二届获得“亚太区最受欢迎香港男歌星”。3月23日，推出专辑《H3M》，由Moving On Stage演唱会班底每人写一首歌完成。陈奕迅亦交上冠军曲《沙龙》，其他冠军曲包括《七百年后》和《allegro opus 3.3am》。6月27日，于第20届台湾金曲奖凭专辑《不想放手》第二次获得“最佳国语专辑奖”，并成为第一位夺得此奖两次的非台湾男歌手。9月21日，推出国语专辑《上五楼的快活》，并凭此专辑再次提名第21届台湾金曲奖“最佳国语男演唱人”。<br><br>
+                    2010年3月12日，推出EP《Time Flies》，其中包括三首三台冠军歌《无人之境》、《陀飞轮》及《一丝不挂》。3月，于香港体育馆举行的《DUO陈奕迅2010演唱会》，并邀请好友谢霆锋等作嘉宾。5月，陈奕迅举行他个人首次欧洲巡回演唱会，地点分别在英国伦敦皇家阿尔伯特音乐厅（Royal Albert Hall）、曼彻斯特阿波罗剧院（Manchester Apollo）以及荷兰鹿特丹阿侯伊体育馆（Ahoy Rotterdam）。伦敦以及曼彻斯特站的演唱会门票均在正式售票数小时内售罄。陈奕迅是继已故歌手罗文后，第二位进驻Royal Albert Hall演出的香港歌手。<br><br>
+                    2010年10月6日，DUO 陈奕迅2011演唱会台北及高雄站同时开卖，门票三小时即售罄，主办单位宣布台北站再加场。另外，陈奕迅也成了首位站上高雄巨蛋的香港歌手。10月15日，推出EP《Taste the Atmosphere》。12月29日，陈奕迅于新城劲爆颁奖礼共获得5个半奖，凭《一丝不挂》获得全球劲爆歌曲奖。<br><br>
+                    2011年1月1日，2010年度叱吒乐坛流行榜颁奖典礼中获得五个奖，包括夺得叱咤乐坛男歌手金奖，叱咤乐坛我最喜爱的男歌手等奖项。4月16日，陈奕迅在四川成都举行DUO陈奕迅2011成都演唱会。<br><br>
+                    2012年1月4日，陈奕迅和王菲登上2012年央视龙年春晚，联袂表演《因为爱情》；12月1号晚，陈奕迅将以《Feel Free！Feel music！》音乐力量新姿态登陆北京万事达中心举办演唱会；12月11日晚，华语金曲奖2012在广州海心沙举行，陈奕迅共获包括全球华人至尊歌手、十大华语唱片在内的6项奖项。<br><br>
+                    2013年发行专辑《The Key》。2014年5月15日发行国语概念专辑《米·闪》。该专辑共收录11首歌曲，并且融合了两种不同的风格，凭借此专辑在第26届台湾金曲奖获得最佳国语男歌手奖。<br><br>
+                </span>
+                <img src="images/biog02.jpg" alt="biography"><br><br>
+                <span>
+                    <h4><i class="ion-ios-pulse-strong"></i>&nbsp;个人生活</h4><hr><br>
+                    陈奕迅因为父亲陈裘大为高级公务员，有机会利用政府津贴到英国读书，故中学和大学时光均在英国渡过。大学时期曾修读建筑学及4年音乐课程。<br><br>
+                    1996年陈奕迅与徐濠萦开始拍拖，当时陈奕迅通过“新秀歌唱大赛”入行，是华星唱片公司旗下一名歌手，徐濠萦是TVB电视台一位三线的演员。1997年二人开始同居生活。2000年陈奕迅签约英皇唱片公司，事业稳步上扬，徐濠萦则逐步淡出，只做香港某服装店的买手，专心做陈奕迅背后的女人。<br><br>
+                    2004年，陈奕迅的父亲陈裘大被控入狱，在这期间徐濠萦一直陪伴在陈裘大身旁，每次上法庭都见徐濠萦出现，或许因此打动了陈奕迅父亲，认同了两人关系。而2004年也可以说是陈奕迅事业低谷的一年，与英皇约满，极少工作。2004年10月，女儿陈康堤出生，小生命的到来让初为人父的陈奕迅改变很多，开始戒烟，努力工作。<br><br>
+                    2006年，EASON推出了首张EP《LIFE CONTINUES》 。3月11日，EASON到广州出席颁奖典礼，这张EP真实地记录着一家三口的甜蜜。另外，EASON完成了在香港红馆的9场“GET A LIFE”演唱会，在演唱会的结束，EASON在众多要感谢的人当中，提到了一个名字——徐濠萦。<br><br>
+                    2006年3月23日，陈奕迅与徐濠萦在香港举行了婚礼。
+                </span>
+            </div>
+        </section>
+
+        <section class="section-discography" id="discs">
+            <div class="row">
+                <h2>DISCOGRAPHY</h2>
+                <div class="discnav">
+                    <ul>
+                        <li><a href="#">1996~2006</a></li>
+                        <li><a href="#">2007~2010</a></li>
+                        <li><a href="#">2011~2015</a></li>
+                        <li><a href="#">All Discography</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h3 id="heading">All Discography</h3>
+            <div class="container scrollcontainer">                
+                <ul id="gallery">
+                    <li class="2011~2015">
+                        <a href="images/disc01.jpg" data-lightbox="projects" 
+                        data-title="Getting Ready" 
+                        data-desc="陈奕迅2015全新粤语专辑《准备中》，收录10首作品，于2015年7月10日发行。">
+                        <img src="images/disc01.jpg"></a>
+                    </li>
+                    <li class="2011~2015">
+                        <a href="images/disc02.jpg" data-lightbox="projects" 
+                        data-title="Rice & Shine" 
+                        data-desc="《米·闪》是香港歌手陈奕迅推出的国语概念专辑，主要由火星电台和林俊杰制作，分为Disc 1、Disc 2，共收录11首歌曲，2014年5月15日发行。">
+                        <img src="images/disc02.jpg"></a>
+                    </li>
+                    <li class="2011~2015">
+                        <a href="images/disc03.jpg" data-lightbox="projects" 
+                        data-title="The Key" 
+                        data-desc="《The Key》是香港歌手陈奕迅于2013年7月22日发行的粤语迷你专辑，收录8首作品，制作人为梁荣骏、江志仁、郭伟亮。">
+                        <img src="images/disc03.jpg"></a>
+                    </li>
+                    <li class="2011~2015">
+                        <a href="images/disc04.jpg" data-lightbox="projects" 
+                        data-title="...3mm Remix" 
+                        data-desc="《...3mm Remix》是香港歌手陈奕迅于2012年11月8日发行的粤语EP，由环球音乐\EAS Music发行。EP中收录了Eason与校长谭咏麟全新演绎的《重口味（The Headmaster Remix）》，霸道十足。">
+                        <img src="images/disc04.jpg"></a>
+                    </li>
+                    <li class="2011~2015">
+                        <a href="images/disc05.jpg" data-lightbox="projects" 
+                        data-title="…3mm" 
+                        data-desc="《…3mm》是陈奕迅2012年8月10日发行的粤语专辑。作曲人包括Eric Kwok、Jerald等人，作词人包括陈咏谦等人。">
+                        <img src="images/disc05.jpg"></a>
+                    </li>
+                    <li class="2011~2015">
+                        <a href="images/disc06.jpg" data-lightbox="projects" 
+                        data-title="？" 
+                        data-desc="《？》是陈奕迅2011年11月11日发行的专辑，该专辑收录12首歌曲，包含9首国语作品、2首广东歌及1首英文歌，由方大同、蓝又时、陈焕仁、陈小霞等担任制作人。">
+                        <img src="images/disc06.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc07.jpg" data-lightbox="projects" 
+                        data-title="Stranger under my skin" 
+                        data-desc="2011年推出全新广东EP《Stranger under my skin》。EP收录了5首广东歌加1首英文曲。">
+                        <img src="images/disc07.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc08.jpg" data-lightbox="projects" 
+                        data-title="Taste the Atmosphere" 
+                        data-desc="《Taste the Atmosphere》是歌手陈奕迅的粤语EP，制作人是叶广权，共收录8首歌曲，于2010年10月22日发行。">
+                        <img src="images/disc08.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc09.jpg" data-lightbox="projects" 
+                        data-title="Time Flies" 
+                        data-desc="《Time Flies》是中国香港歌手陈奕迅的粤语EP，于2010年3月12日发行，由环球音乐\新艺宝唱片发行。">
+                        <img src="images/disc09.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc10.jpg" data-lightbox="projects" 
+                        data-title="上五楼的快活" 
+                        data-desc="《上五楼的快活》是香港歌手陈奕迅的国语专辑，由蔡健雅、吴青峰、林暐哲、李守信等人创作，收录了11首歌曲，2009年9月23日发行。">
+                        <img src="images/disc10.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc11.jpg" data-lightbox="projects" 
+                        data-title="H³M" 
+                        data-desc="《H³M》是香港歌手陈奕迅2009年3月23日发行的粤语专辑，是陈奕迅与他巡演团队中的乐手及和声歌手组成的乐队所创作的专辑。">
+                        <img src="images/disc11.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc12.jpg" data-lightbox="projects" 
+                        data-title="不想放手" 
+                        data-desc="《不想放手》是陈奕迅在2008年6月30日发行的国语专辑，由吴向飞作词，Adrian Fu作曲，Jim lee监制，共收录了11首歌曲。">
+                        <img src="images/disc12.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc13.jpg" data-lightbox="projects" 
+                        data-title="你的陈奕迅" 
+                        data-desc="2007年国语大碟《你的陈奕迅国语精选》，碟内收录了《反正是我》、《黑．白．灰》、《Special Thanks To》、《七》等国语唱片内多首大热的国语情歌。">
+                        <img src="images/disc13.jpg"></a>
+                    </li>
+                    <li class="2007~2010">
+                        <a href="images/disc14.jpg" data-lightbox="projects" 
+                        data-title="Listen To Eason Chan" 
+                        data-desc="《Listen To Eason Chan》为香港歌手陈奕迅于2007年10月18日发行的粤语音乐专辑，由环球音乐\新艺宝唱片发行。">
+                        <img src="images/disc14.jpg"></a>
+                    </li>
+                    <li class="1996~2006">
+                        <a href="images/disc15.jpg" data-lightbox="projects" 
+                        data-title="认了吧" 
+                        data-desc="《认了吧》是香港歌手陈奕迅推出的国语专辑，收录11首歌曲，由林夕、易家扬等作词，C.Y. Kong作曲，2007年4月24日由新艺宝唱片发行。">
+                        <img src="images/disc15.jpg"></a>
+                    </li>
+                    <li class="1996~2006">
+                        <a href="images/disc16.jpg" data-lightbox="projects" 
+                        data-title="What's going on...?" 
+                        data-desc="《What's going on...?》是陈奕迅的一张粤语专辑，发行于2006年11月。">
+                        <img src="images/disc16.jpg"></a>
+                    </li>
+                    <li class="1996~2006">
+                        <a href="images/disc17.jpg" data-lightbox="projects" 
+                        data-title="Life Continues..." 
+                        data-desc="《Life Continues》是陈奕迅2006年推出的专辑，共收录了6首全新作品及一首手机小说主题曲。">
+                        <img src="images/disc17.jpg"></a>
+                    </li>
+                    <li class="1996~2006">
+                        <a href="images/disc18.jpg" data-lightbox="projects" 
+                        data-title="我的最好时代" 
+                        data-desc="《我的最好时代》是陈奕迅在2006年2月9号发行的专辑。">
+                        <img src="images/disc18.jpg"></a>
+                    </li>
+                    <li class="1996~2006">
+                        <a href="images/disc19.jpg" data-lightbox="projects" 
+                        data-title="怎么样" 
+                        data-desc="《怎么样》是陈奕迅在2005年发行的专辑。">
+                        <img src="images/disc19.jpg"></a>
+                    </li>
+                    <li class="1996~2006">
+                        <a href="images/disc20.jpg" data-lightbox="projects" 
+                        data-title="U87" 
+                        data-desc="《U87》为香港歌手陈奕迅2005年加盟环球唱片旗下新艺宝唱片后推出的第一张粤语音乐专辑，于2005年6月7日发行。">
+                        <img src="images/disc20.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section-special" id="specs">
+            <div class="row">
+                <h2>SPECIAL</h2>
+            </div>
+            <div id="specdiv">
+                <iframe width="100%" height="125" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/9328605&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                <iframe width="100%" height="125" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/210897928&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                <iframe width="100%" height="125" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27897587&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+            <div id="audiocontainer" class="scrollcontainer">
+                <div id="audio-image">
+                    <img src="images/audio/covers/cover2.jpg" class="cover">
+                </div>
+                <div id="audio-player">
+                    <div id="audio-info">
+                        <span class="artist">陈奕迅</span> - <span class="title">黑洞.mp3</span>
+                    </div>
+                    <input id="volume" type="range" min="0" max="10" value="4">
+                    <br>
+                    <div id="mp3buttons">
+                        <span>
+                            <button id="prev"></button>
+                            <button id="play"></button>
+                            <button id="pause"></button>
+                            <button id="stop"></button>
+                            <button id="next"></button>
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="tracker">
+                        <div id="progress-bar">
+                            <span id="progress"></span>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul id="playlist" class="hidden">
+                        <li class="active" song="陈奕迅 - 黑洞.mp3" cover="cover1.jpg" artist="陈奕迅">黑洞.mp3</li>
+                        <li song="陈奕迅 - 梦的可能.mp3" cover="cover1.jpg" artist="陈奕迅">梦的可能.mp3</li>
+                        <li song="陈奕迅 - 起点终站.mp3" cover="cover1.jpg" artist="陈奕迅">起点终站.mp3</li>
+                        <li song="陈奕迅 - 人生马拉松.mp3" cover="cover1.jpg" artist="陈奕迅">陈奕迅 - 人生马拉松.mp3</li>
+                        <li song="陈奕迅 - 万圣节的一个传说.mp3" cover="cover1.jpg" artist="陈奕迅">万圣节的一个传说.mp3</li>
+                        <li song="陈奕迅 - 我细我撇先.mp3" cover="cover1.jpg" artist="陈奕迅">我细我撇先.mp3</li>
+                        <li song="陈奕迅 - 喜欢一个人.mp3" cover="cover1.jpg" artist="陈奕迅">喜欢一个人.mp3</li>
+                        <li song="陈奕迅 - 一个灵魂的独白.mp3" cover="cover1.jpg" artist="陈奕迅">一个灵魂的独白.mp3</li>                        
+                    </ul>
+                </div>
+            </div>    
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                        <li><a href="discography.html">Discography</a></li>
+                        <li><a href="special.html">Special</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    &copy; 2015 By Shi Jun.<i class="ion-ios-heart"></i> All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
